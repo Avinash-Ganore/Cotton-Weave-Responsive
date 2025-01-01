@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width : 100%;
+}
+
+#main {
+    font-family: "Almarai", serif;
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 50% 5% 45%;
+    grid-template-rows: 16% 52% 32%;
+
+}
+
+#top {
+
+    /* background-color: aqua; */
+    grid-column: 1/4;
+}
+
+#left {
+    /* background-color: blue; */
+    padding: 0px 100px;
+
+}
+
+#left h1 {
+    font-size: 9.5vw;
+    line-height: 0.95;
+    font-weight: 400;
+}
+
+#left-bottom {
+    /* background-color: rebeccapurple; */
+    grid-row: 3;
+    padding-left: 100px;
+    
+}
+
+#color {
+    margin-top: 42px;
+    width: fit-content;
+    border: 1px #0e0e0e solid;
+    color: #0e0e0e;
+    border-radius: 120px;
+    padding: 6px 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#color p{
+    margin-right: 18px;
+    font-weight : 900px;
+    font-size: 0.86vw;  
+}
+
+#color #color1 {
+    width: 1.10vw;
+    height: 1.10vw;
+    background-color: #CB983C;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+#color #color2 {
+    background-color: #353331;
+    width: 1.10vw;
+    height: 1.10vw;
+    border-radius: 50%;
+}
+
+#left-bottom h3{
+    font-size: 1.4vw;
+    font-style: normal;
+    margin-bottom: 5px;
+}
+
+#left-bottom #caption {
+    width: 57%;
+    line-height: 1.5vw;
+    font-size: 1.10vw;
+    font-weight: 500;  
+    color: #272727;
+}
+#tittle {
+    /* background-color: yellow; */
+    grid-row: 2/4;
+}
+
+#rotated {
+    position: absolute;
+    /* background-color: red; */
+    font-size: 30px;
+    font-weight: 700;
+    bottom: 0;
+    left: 50%;
+    transform-origin: 0 0;
+    rotate: -90deg;
+}
+
+#right {
+    margin-top: 89px;
+    width: 60%;
+    /* background-color: red; */
+    grid-row: 2/4;
+    /* border: #0e0e0e 2px solid; */
+}
+
+#right img {
+    height: 90.3%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+#right #price {
+    padding:14px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: #0e0e0e 2px solid; */
+}
+
+#right  h5 {
+    font-size: 22px;
+
+}
+
+#rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: #0e0e0e 2px solid; */
+}
+
+#rating p {
+    font-size: 11px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+#rating i{
+    font-size: 13px;
+}
+
+#button {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 49%;
+    right: 12.5%;
+}
+
+#button h3 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+
+@media (max-width:600px) {
+    #main {
+        grid-template-columns: 100%;
+        grid-template-rows: 5% 38% 30% 5%;
+    }   
+    
+    #left {
+        padding: 0px 20px;
+    }
+
+    #cotton {
+        padding: 16px;
+    }
+
+    #weave {
+        padding-left: 70px;
+
+    }
+    
+    #left h1 {
+        font-size: 24vw;
+    }
+    
+    #left-bottom {
+        padding-left: 20px;   
+    }
+    
+    #color {
+        margin-top: 30px;   
+        margin-bottom: 30px;
+    }
+    #color p{
+        margin-right: 18px;
+        font-size: 3vw;     
+    }
+    
+    #color #color1 {
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+    
+    #color #color2 {
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+    
+    #left-bottom h3{
+        font-size: 5vw;
+    }
+    
+    #left-bottom #caption {
+        width: 85%;
+        line-height: 4vw;
+        font-size: 3.5vw;
+    }
+    #tittle {
+        grid-row: 4;
+        position: relative;
+
+    }
+
+    #rotated {
+        position: absolute;
+        font-size: 25px;
+        top: 25%;
+        left: 20px;
+        transform-origin: 50 50;
+        rotate: 0deg;
+        padding-left: 10px;
+        border-left: 5px black solid;
+    
+    }
+
+    #right {
+        margin-top: 0px;
+        width: 100%;
+        grid-row: 5;
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    
+    #right #price {
+        padding: 10px 20px;
+    }
+    
+    #button {
+        padding: 5px;
+        height: 110px;
+        width: 110px;
+        top: 71.2%;
+        right: 0%;
+    }
+    
+    #button h3 {
+        font-size: 15px;
+    } 
+}
